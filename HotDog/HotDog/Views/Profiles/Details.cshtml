@@ -4,7 +4,10 @@
     ViewBag.Title = "Details";
 }
 
-
+<head>
+    <title>Details</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/create.css"/>
+</head>
 <h2>Details</h2>
 
 <div>
@@ -17,31 +20,35 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
 
-                <img src="@Url.Content("~/Images/hotdog.jpg")" style="max-width:200px; max-height: 400px;" title="click to view in a new window or tab" />
+                <img src="@Url.Content("~/Images/hotdog.jpg")" style="max-width:300px; max-height: 500px;" title="click to view in a new window or tab" />
                 <br />
                 <br />
-                <ul>
-              <li> Favorite Hot Dog:  @Html.DisplayFor(m => m.Favorite)</li>
-             <li> Location Eaten:  @Html.DisplayFor(m => m.Location)</li>
+                
+                <ul >
+              <li> <h4>Favorite Hot Dog:</h4>  @Html.DisplayFor(m => m.Favorite)</li>
+                    
+             <li><h4> Location Eaten:</h4>  @Html.DisplayFor(m => m.Location)</li>
                 </ul>
                
-
+                
 
             </div>
             
 
         
       
-            <div class="col-md-9">
+            <div class="col-md-8">
                <h2> @Html.DisplayFor(m=> m.Name, "NameTemplate")</h2>
+                <div class="bio">
                <h4>Biography:</h4> 
                @Html.DisplayFor(m => m.Bio )
+                    </div>
                 <br />
                 <br />
 
-        <h5>Most Recent Eaten Dog:</h5>
+        <h4>Most Recently Eaten Dog:</h4>
                 <ul>
                     <li>@Html.DisplayFor(m=>m.Dog)
 
@@ -55,3 +62,4 @@
 
 </div>
 
+</div>
