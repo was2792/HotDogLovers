@@ -1,0 +1,57 @@
+﻿@model HotDog.Models.Profile
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<h2>Details</h2>
+
+<div>
+    <h4>Hot Dog Lover Profile</h4>
+    <p>
+        @Html.ActionLink("Change", "Edit", new { id = Model.ProfileID }) 
+        
+    </p>
+    <hr />
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+                <img src="@Url.Content("~/Images/hotdog.jpg")" style="max-width:200px; max-height: 400px;" title="click to view in a new window or tab" />
+                <br />
+                <br />
+                <ul>
+              <li> Favorite Hot Dog:  @Html.DisplayFor(m => m.Favorite)</li>
+             <li> Location Eaten:  @Html.DisplayFor(m => m.Location)</li>
+                </ul>
+               
+
+
+            </div>
+            
+
+        
+      
+            <div class="col-md-9">
+               <h2> @Html.DisplayFor(m=> m.Name, "NameTemplate")</h2>
+               <h4>Biography:</h4> 
+               @Html.DisplayFor(m => m.Bio )
+                <br />
+                <br />
+
+        <h5>Most Recent Eaten Dog:</h5>
+                <ul>
+                    <li>@Html.DisplayFor(m=>m.Dog)
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+   
+
+<p>@Html.ActionLink("Back to List", "Index")</p>
+
+</div>
+
