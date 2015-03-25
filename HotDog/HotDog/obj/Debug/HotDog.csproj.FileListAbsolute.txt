@@ -104,6 +104,5 @@ C:\Users\Alex\Documents\GitHub\HotDogLovers\HotDog\HotDog\bin\Microsoft.Owin.Sec
 C:\Users\Alex\Documents\GitHub\HotDogLovers\HotDog\HotDog\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Alex\Documents\GitHub\HotDogLovers\HotDog\HotDog\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Alex\Documents\GitHub\HotDogLovers\HotDog\HotDog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Alex\Documents\GitHub\HotDogLovers\HotDog\HotDog\obj\Debug\HotDog.csprojResolveAssemblyReference.cache
 C:\Users\Alex\Documents\GitHub\HotDogLovers\HotDog\HotDog\obj\Debug\HotDog.dll
 C:\Users\Alex\Documents\GitHub\HotDogLovers\HotDog\HotDog\obj\Debug\HotDog.pdb
